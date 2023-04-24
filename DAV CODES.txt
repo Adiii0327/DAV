@@ -491,4 +491,24 @@ import numpy as np import pandas as pd import matplotlib. pyplot as plt from sta
 # Plot the data and the fitted values fig , ax = plt . subplots()ax. plot( data, label='Data') ax. plot( results.fittedvalues, color='red', label='Fitted Values') ax. legend() plt . show()
 # Predict future values n_steps = 10 forecast = results.forecast(steps=n_steps)
 # Plot the predicted values fig , ax = plt . subplots() ax. plot( data, label='Data') ax. plot( np. arange( n_samples, n_samples+n_steps), forecast, color='red', label='Predicted Values') ax. legend() plt . show()
-This is final
+
+#4 Plotting
+import matplotlib.pyplot as plt
+
+x ["mi","csk","rcb", "gt", "de"] 
+
+y [9,8,7,6,5]
+
+bar= plt.bar(x,y) 
+
+plt.show(bar)
+
+line = plt.plot(x,y) plt.show(line)
+
+scatter = plt.scatter(x,y) plt.show(scatter)
+
+histogram plt.hist(y) plt.show(histogram)
+
+box= plt.boxplot(y) plt.show(box)
+
+violen plt.violinplot(y) plt.show(violen)
